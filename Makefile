@@ -9,9 +9,13 @@ TARGETS=ds_mysql_so
 
 # component:ds_mysql
 CFLAGS_DS_MYSQL_SO=$(SHCFLAGS) \
-	-I/opt/msys/3rdParty/include \
 	-I/usr/include/mysql \
-	-DSHARED_MODULE=1 -Imodules/datasource -Imodules/datasource -Icidrtree -Imisc 
+	-I/opt/msys/3rdParty/include \
+	-I/opt/msys/3rdParty/include/x86_64 \
+	-DSHARED_MODULE=1 \
+	-I/opt/msys/3rdParty/include/modules/datasource \
+	-I/opt/msys/3rdParty/include/cidrtree \
+	-I/opt/msys/3rdParty/include/misc
 
 # component:ds_mysql
 CLEAN_DS_MYSQL_SO=modules/datasource/ds_mysql.so \
@@ -32,7 +36,6 @@ clean-ds_mysql_so:
 
 ds_mysql_so: modules/datasource/ds_mysql.so
 
-install: destdirs
 modules/datasource/ds_mysql.so: $(OBJS_DS_MYSQL_SO) $(DEPS_DS_MYSQL_SO)
 	@echo "  [ds_mysql_so] linking "$@
 	@$(MODULELD) -o $@ $(SHLDFLAGS) $(LDFLAGS_DS_MYSQL_SO) $(OBJS_DS_MYSQL_SO) $(EXTRA_OBJS_DS_MYSQL_SO) $(LIBS_DS_MYSQL_SO) $(LIBS)
@@ -41,5 +44,8 @@ modules/datasource/ds_mysql.lo: modules/datasource/ds_mysql.c $(EXTRA_DEPS_DS_MY
 	@echo "  [ds_mysql_so] compiling "$@
 	@if $(CC) -MT modules/datasource/ds_mysql.lo -MMD -MP -MF modules/datasource/.deps/ds_mysql.lodep.T  $(CPPFLAGS_DS_MYSQL_SO_OBJ) $(CPPFLAGS_DS_MYSQL_SO) $(CPPFLAGS) $(CFLAGS_DS_MYSQL_SO) $(CFLAGS_DS_MYSQL_SO_OBJ)  -c modules/datasource/ds_mysql.c -o modules/datasource/ds_mysql.lo; then mv -f modules/datasource/.deps/ds_mysql.lodep.T modules/datasource/.deps/ds_mysql.lodep; else rm -f modules/datasource/.deps/ds_mysql.lodep.T; exit 1; fi
 
+include modules/datasource/.deps/ds_mysql.lodep
+
+install: destdirs
 #	$(INSTALL)  -m 0755 modules/datasource/ds_mysql.so $(DESTDIR)$(libexecdir)/datasource/
 #	$(INSTALL)  -m 0644 modules/datasource/ds_mysql.ecm $(DESTDIR)$(libexecdir)/datasource/
