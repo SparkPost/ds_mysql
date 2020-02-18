@@ -1,5 +1,5 @@
 
-CC=/opt/msys/3rdParty/bin/ccache gcc
+CC=gcc
 CFLAGS=-m64 -gdwarf-3 -D_REENTRANT -DECELERITY -std=gnu99 -Wall -Wmissing-prototypes -fno-omit-frame-pointer -Wformat-security -g3
 CPPFLAGS=-I. -Iares -D_LARGEFILE_SOURCE -D_FILE_OFFSET_BITS=64 -D_LARGEFILE64_SOURCE -I/opt/msys/3rdParty/include   -Werror-implicit-function-declaration
 SHCFLAGS=-fPIC -m64 -gdwarf-3 -D_REENTRANT -DECELERITY -std=gnu99 -Wall -Wmissing-prototypes -fno-omit-frame-pointer -Wformat-security -g3
