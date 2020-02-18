@@ -1,0 +1,3 @@
+[ds_mysql]
+msys.requires = datasource
+msys.provides = datasource.mysql
