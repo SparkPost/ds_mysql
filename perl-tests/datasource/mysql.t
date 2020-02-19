@@ -23,7 +23,7 @@ needs 'sieve';
 needs 'sievelib';
 config
   "datasource mysql" => {
-    uri => '("mysql:host=sinkhole.int.messagesystems.com;dbname=ectest;user=ectest;password=ectest")',
+    uri => '("mysql:host=localhost;dbname=ectest;user=ectest;password=ectest")',
     cache_size => 2,
   };
 
