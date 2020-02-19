@@ -8,7 +8,7 @@ equally well with the open-sourced MariaDB.
 
 We include some basic tests that you can verify functionality using
 ec_runtests.pl. There are some setup steps you must perform before the
-tests can run; see [TESTING.md](TESTING.MD) for details. You must build and test this
+tests can run; see [TESTING.md](TESTING.md) for details. You must build and test this
 module on a licensed Momentum MTA instance, but once you build it, you can
 copy the module files to other servers and remove the development tools from
 the MTA.
