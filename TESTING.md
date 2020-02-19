@@ -9,7 +9,7 @@ user after you are done testing.
   * You have the root password so you can create new users
 
 NOTE the ec_runtests.pl test harness will throw warnings if msyspg isn't also installed locally;
-you can either install and configure msyspg or ignore these errors
+you can either install and configure msyspg or ignore these warnings.
 
 # Setup
 Execute the following SQL script to create the necessary resources for the tests to run:
@@ -31,4 +31,10 @@ You should test that with (password is also `ectest`):
     | good4 |
     +-------+
     5 rows in set (0.00 sec)
+
+# Cleanup
+After you have successfully run the included tests, you can remove the database and user created
+above with:
+
+    $ mysql -u root -p < drop_ectest.sql
 

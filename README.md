@@ -20,5 +20,8 @@ Install msys-role-mta and msys-ecelerity-devel metapackages
 Install gcc, mysql-devel, mysql-server
 
     make
-    make test
     sudo make install
+    make test
+
+NOTE: you have to install the ds_msql driver before you can test, because we
+don't support out-of-tree modules.
