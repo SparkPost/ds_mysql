@@ -3,11 +3,11 @@ use Ecelerity::Test;
 use IO::File;
 use strict;
 
-my $credmgr = '../scripts/credmgr';
+my $credmgr = '/opt/msys/ecelerity/bin/credmgr';
 my $random_generator = '/dev/urandom';
 my $db_file = "$Conf->{test_base}/credentials.db";
 my $key_file = "$Conf->{test_base}/credentials.key";
-my $host = 'sinkhole.int.messagesystems.com';
+my $host = 'localhost';
 my $facility = 'mysql';
 my $user = 'ectest';
 my $password = 'ectest';
@@ -55,7 +55,7 @@ config
     debug_level => 'debug',
   },
   "datasource mysql" => {
-    uri => '("mysql:host=sinkhole.int.messagesystems.com;dbname=ectest;user=ectest")',
+    uri => '("mysql:host=localhost;dbname=ectest;user=ectest")',
     cache_size => 2,
   };
 

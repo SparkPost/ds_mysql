@@ -23,7 +23,7 @@ write_lua1($lua_script1);
 
 config
   "datasource mysql" => {
-    uri => '("mysql:host=sinkhole.int.messagesystems.com;dbname=ectest;user=ectest;password=ectest")',
+    uri => '("mysql:host=localhost;dbname=ectest;user=ectest;password=ectest")',
     cache_size => 2,
   },
   "scriptlet mysql_lua" => {
