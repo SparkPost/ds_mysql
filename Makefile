@@ -9,13 +9,14 @@ TARGETS=ds_mysql_so
 
 # component:ds_mysql
 CFLAGS_DS_MYSQL_SO=$(SHCFLAGS) \
+	-DSHARED_MODULE=1 \
 	-I/usr/include/mysql \
 	-I/opt/msys/3rdParty/include \
-	-I/opt/msys/3rdParty/include/x86_64 \
-	-DSHARED_MODULE=1 \
-	-I/opt/msys/3rdParty/include/modules/datasource \
-	-I/opt/msys/3rdParty/include/cidrtree \
-	-I/opt/msys/3rdParty/include/misc
+	-I/opt/msys/ecelerity/include \
+	-I/opt/msys/ecelerity/include/x86_64 \
+	-I/opt/msys/ecelerity/include/modules/datasource \
+	-I/opt/msys/ecelerity/include/cidrtree \
+	-I/opt/msys/ecelerity/include/misc
 
 # component:ds_mysql
 CLEAN_DS_MYSQL_SO=modules/datasource/ds_mysql.so \
