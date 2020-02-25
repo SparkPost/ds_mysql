@@ -15,10 +15,28 @@ the MTA.
 
 #Usage:
 
-Install msys-role-mta and msys-ecelerity-devel metapackages
+Install msys-role-mta and msys-ecelerity-devel metapackages in the directory you
+installed Momentum from:
 
-Install gcc, mysql-devel, mysql-server
+    cd /var/tmp/momentum-?????
+    sudo yum install -c momentum.repo --enablerepo=momentum msys-role-mta msys-ecelerity-devel
 
+
+Install gcc, mysql-devel, mysql-server:
+
+    sudo yum install gcc mysql-devel mysql-server
+
+or on Centos-7:
+
+    sudo yum install gcc mariadb-devel mariadb-server
+
+
+Clone ds-mysql from github (https://github.com/SparkPost/ds_mysql). You may
+need to install git to do this ('sudo yum install git').
+
+Build the ds-mysql code, install, and test:
+
+    cd <ds-mysql checkout directory>
     make
     sudo make install
     make test
