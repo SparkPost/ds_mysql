@@ -6,7 +6,7 @@ databases. If you are using Oracle's MySQL, you are responsible for
 ensuring that you have the proper license to run this module. It works
 equally well with the open-sourced MariaDB.
 
-We include some basic tests that you can verify functionality using
+We include some basic tests that you can use to verify functionality using
 ec_runtests.pl. There are some setup steps you must perform before the
 tests can run; see [TESTING.md](TESTING.md) for details. You must build and test this
 module on a licensed Momentum MTA instance, but once you build it, you can
