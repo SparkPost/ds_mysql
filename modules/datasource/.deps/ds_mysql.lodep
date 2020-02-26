@@ -1,0 +1,241 @@
+modules/datasource/ds_mysql.lo: modules/datasource/ds_mysql.c ec_config.h \
+ defines.h ec_types.h configuration.h ec_config.h util.h event.h \
+ misc/ec_string.h ec_types.h memory.h ec_malloc.h ec_atomic.h \
+ misc/ec_ptr_array.h ip_acl.h throttle.h dns_ds.h mail_queue.h skiplist.h \
+ rsplay.h skip_heap.h scheduler.h timefuncs.h \
+ /opt/msys/3rdParty/include/ck_fifo.h /opt/msys/3rdParty/include/ck_cc.h \
+ /opt/msys/3rdParty/include/gcc/ck_cc.h \
+ /opt/msys/3rdParty/include/ck_md.h /opt/msys/3rdParty/include/ck_pr.h \
+ /opt/msys/3rdParty/include/ck_limits.h \
+ /opt/msys/3rdParty/include/ck_stdint.h \
+ /opt/msys/3rdParty/include/ck_stdbool.h \
+ /opt/msys/3rdParty/include/gcc/x86_64/ck_pr.h \
+ /opt/msys/3rdParty/include/gcc/x86_64/ck_f_pr.h \
+ /opt/msys/3rdParty/include/gcc/ck_pr.h \
+ /opt/msys/3rdParty/include/ck_spinlock.h \
+ /opt/msys/3rdParty/include/spinlock/anderson.h \
+ /opt/msys/3rdParty/include/spinlock/cas.h \
+ /opt/msys/3rdParty/include/ck_backoff.h \
+ /opt/msys/3rdParty/include/ck_elide.h \
+ /opt/msys/3rdParty/include/ck_string.h \
+ /opt/msys/3rdParty/include/spinlock/clh.h \
+ /opt/msys/3rdParty/include/ck_stddef.h \
+ /opt/msys/3rdParty/include/spinlock/dec.h \
+ /opt/msys/3rdParty/include/spinlock/fas.h \
+ /opt/msys/3rdParty/include/spinlock/hclh.h \
+ /opt/msys/3rdParty/include/spinlock/mcs.h \
+ /opt/msys/3rdParty/include/spinlock/ticket.h message.h \
+ message/message_id.h netlistener.h dns.h ecdict.h memory.h echash.h \
+ ares/ares.h event.h module-hooks.h configuration.h \
+ /opt/msys/3rdParty/include/unbound.h cidrtree/cidrtree.h ec_atomic.h \
+ util.h cidrtree/cidrtree_ipv6.h cidrtree/cidrtree.h ec_listener_parser.h \
+ eclist.h message_compat.h ec_ssl.h misc/suffix_tree.h misc/ec_blobject.h \
+ misc/ec_string.h /opt/msys/3rdParty/include/pcre.h module.h \
+ shared_module.h version.h version_funcs.h echash.h \
+ modules/datasource/ecdatasource.h validate.h validate_context.h ec_boh.h \
+ sem_hack.h ec_thread_pool.h sem_hack.h validate.h event_loop.h \
+ ec_cache.h ec_fc.h /opt/msys/3rdParty/include/ck_epoch.h \
+ /opt/msys/3rdParty/include/ck_stack.h misc/ec_ptr_array.h \
+ hooks/core/reversible_encryption.h module-hooks.h \
+ /usr/include/mysql/mysql.h /usr/include/mysql/mysql_version.h \
+ /usr/include/mysql/mysql_com.h /usr/include/mysql/mysql_time.h \
+ /usr/include/mysql/my_list.h /usr/include/mysql/typelib.h \
+ /usr/include/mysql/my_alloc.h
+
+ec_config.h:
+
+defines.h:
+
+ec_types.h:
+
+configuration.h:
+
+ec_config.h:
+
+util.h:
+
+event.h:
+
+misc/ec_string.h:
+
+ec_types.h:
+
+memory.h:
+
+ec_malloc.h:
+
+ec_atomic.h:
+
+misc/ec_ptr_array.h:
+
+ip_acl.h:
+
+throttle.h:
+
+dns_ds.h:
+
+mail_queue.h:
+
+skiplist.h:
+
+rsplay.h:
+
+skip_heap.h:
+
+scheduler.h:
+
+timefuncs.h:
+
+/opt/msys/3rdParty/include/ck_fifo.h:
+
+/opt/msys/3rdParty/include/ck_cc.h:
+
+/opt/msys/3rdParty/include/gcc/ck_cc.h:
+
+/opt/msys/3rdParty/include/ck_md.h:
+
+/opt/msys/3rdParty/include/ck_pr.h:
+
+/opt/msys/3rdParty/include/ck_limits.h:
+
+/opt/msys/3rdParty/include/ck_stdint.h:
+
+/opt/msys/3rdParty/include/ck_stdbool.h:
+
+/opt/msys/3rdParty/include/gcc/x86_64/ck_pr.h:
+
+/opt/msys/3rdParty/include/gcc/x86_64/ck_f_pr.h:
+
+/opt/msys/3rdParty/include/gcc/ck_pr.h:
+
+/opt/msys/3rdParty/include/ck_spinlock.h:
+
+/opt/msys/3rdParty/include/spinlock/anderson.h:
+
+/opt/msys/3rdParty/include/spinlock/cas.h:
+
+/opt/msys/3rdParty/include/ck_backoff.h:
+
+/opt/msys/3rdParty/include/ck_elide.h:
+
+/opt/msys/3rdParty/include/ck_string.h:
+
+/opt/msys/3rdParty/include/spinlock/clh.h:
+
+/opt/msys/3rdParty/include/ck_stddef.h:
+
+/opt/msys/3rdParty/include/spinlock/dec.h:
+
+/opt/msys/3rdParty/include/spinlock/fas.h:
+
+/opt/msys/3rdParty/include/spinlock/hclh.h:
+
+/opt/msys/3rdParty/include/spinlock/mcs.h:
+
+/opt/msys/3rdParty/include/spinlock/ticket.h:
+
+message.h:
+
+message/message_id.h:
+
+netlistener.h:
+
+dns.h:
+
+ecdict.h:
+
+memory.h:
+
+echash.h:
+
+ares/ares.h:
+
+event.h:
+
+module-hooks.h:
+
+configuration.h:
+
+/opt/msys/3rdParty/include/unbound.h:
+
+cidrtree/cidrtree.h:
+
+ec_atomic.h:
+
+util.h:
+
+cidrtree/cidrtree_ipv6.h:
+
+cidrtree/cidrtree.h:
+
+ec_listener_parser.h:
+
+eclist.h:
+
+message_compat.h:
+
+ec_ssl.h:
+
+misc/suffix_tree.h:
+
+misc/ec_blobject.h:
+
+misc/ec_string.h:
+
+/opt/msys/3rdParty/include/pcre.h:
+
+module.h:
+
+shared_module.h:
+
+version.h:
+
+version_funcs.h:
+
+echash.h:
+
+modules/datasource/ecdatasource.h:
+
+validate.h:
+
+validate_context.h:
+
+ec_boh.h:
+
+sem_hack.h:
+
+ec_thread_pool.h:
+
+sem_hack.h:
+
+validate.h:
+
+event_loop.h:
+
+ec_cache.h:
+
+ec_fc.h:
+
+/opt/msys/3rdParty/include/ck_epoch.h:
+
+/opt/msys/3rdParty/include/ck_stack.h:
+
+misc/ec_ptr_array.h:
+
+hooks/core/reversible_encryption.h:
+
+module-hooks.h:
+
+/usr/include/mysql/mysql.h:
+
+/usr/include/mysql/mysql_version.h:
+
+/usr/include/mysql/mysql_com.h:
+
+/usr/include/mysql/mysql_time.h:
+
+/usr/include/mysql/my_list.h:
+
+/usr/include/mysql/typelib.h:
+
+/usr/include/mysql/my_alloc.h:
