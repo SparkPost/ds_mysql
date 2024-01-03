@@ -33,7 +33,9 @@ or on Centos-7:
 
 
 Clone ds-mysql from github (https://github.com/SparkPost/ds_mysql). You may
-need to install git to do this ('sudo yum install git').
+need to install git to do this:
+
+    sudo yum install -y git
 
 Build the ds-mysql code, install, and test:
 
