@@ -13,17 +13,16 @@ module on a licensed Momentum MTA instance, but once you build it, you can
 copy the module files to other servers and remove the development tools from
 the MTA.
 
-#Usage:
+# Usage:
 
-Install msys-role-mta and msys-ecelerity-devel metapackages in the directory you
+Install `msys-role-mta` and `msys-ecelerity-devel` metapackages in the directory you
 installed Momentum from:
 
     cd /var/tmp/momentum-?????
     ./setrepodir
     sudo yum install -y --config momentum.repo --enablerepo momentum msys-role-mta msys-ecelerity-devel
 
-
-Install mysql-devel, mysql-server:
+Install `mysql-devel` and `mysql-server`:
 
     sudo yum install -y mysql-devel mysql-server
 
@@ -31,18 +30,16 @@ or on Centos-7:
 
     sudo yum install -y mariadb-devel mariadb-server
 
-
-Clone ds-mysql from github (https://github.com/SparkPost/ds_mysql). You may
-need to install git to do this:
+Clone `ds-mysql` from GitHub (https://github.com/SparkPost/ds_mysql), you may need to install git to do this:
 
     sudo yum install -y git
 
-Build the ds-mysql code, install, and test:
+Build the `ds-mysql` code, install, and test:
 
     cd <ds-mysql checkout directory>
     make
     sudo make install
     make test
 
-NOTE: you have to install the ds_msql driver before you can test, because we
-don't support out-of-tree modules.
+> [!CAUTION]
+> You have to install the `ds_mysql` driver before you can test, because we don't support out-of-tree modules.
