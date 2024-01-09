@@ -1,2 +1,2 @@
-DROP USER ectest;
+DROP USER 'ectest'@'localhost';
 DROP DATABASE ectest;
