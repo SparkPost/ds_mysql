@@ -2,7 +2,7 @@
 
 If you want to test the `ds_mysql` module locally, you must temporarily configure
 MySQL/MariaDB with a user, a database, and a single table. You should delete the database and
-user after you are done testing.
+the user after you are done testing.
 
 # Assumptions
   * You have `mysql-server` or `mariadb-server` installed and configured, listening to `localhost`
@@ -14,7 +14,7 @@ user after you are done testing.
 # Setup
 Execute the following SQL script to create the necessary resources for the tests to run:
 
-    $ mysql -u root -p < create_ectest.sql
+    mysql -u root -p < create_ectest.sql
 
 You should test that with (password is also `ectest`):
 
